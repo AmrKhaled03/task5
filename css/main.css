@@ -1,0 +1,200 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+
+
+
+
+/* start navbar */
+.navbar .logo{
+  
+margin-left: 20px;
+padding-left: 50px;
+ 
+    position: relative;
+    top: 45px; 
+width: 20%;
+}
+   
+
+.navbar{
+    background-color: black;
+
+   width: 100%;
+
+}
+
+.navbar .links ul{
+    display: flex;
+    justify-content: center;
+
+}
+.navbar .links ul li{
+  
+    margin:  10px 20px 20px;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+.navbar .links ul li a{
+    text-decoration: none;
+    color: white;
+
+
+}
+  /*end navbar  */
+
+  /* start landing */
+.landing{
+    display: flex;
+    background-color: black;
+    height: 70vh;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.landing .img img{
+    width: 100%;
+}
+.landing .topics{
+    color: white;
+  
+
+margin-right: 40px;
+}
+.landing .topics .p-one{
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    margin-left: 25px;
+}
+.landing .topics .p-two{
+font-size: 23px;
+font-family: sans-serif;
+margin: 20px 25px;
+
+}
+/* end landing */
+
+/* start cards */
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+    margin: 25px 70px 150px ;
+   
+}
+ .title h4{
+  font-size: 25px;
+  
+  margin-top: 50px;
+  margin-left: 85px;
+  margin-right: 5px;
+}
+.cards .category{
+flex: 12%;
+
+    margin:10px 12px  ;
+}
+/* end cards */
+/* start footer */
+.footer{
+
+background-color: white;
+    width: 100%;
+  padding: 50px 30px;
+margin-top: 30px;
+    
+}
+.footer .title{
+font-size: 20px;
+font-weight: 300;
+margin-bottom: 10px;
+margin-left: 130px;
+}
+
+.footer .desc{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+margin-right: 120px;
+
+}
+.footer .desc .develop{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  
+}
+.footer .desc .develop h3{
+    margin-left: 10px;
+}
+.footer .desc .develop ul li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+.footer .desc .develop ul p{
+    margin-left: 10px;
+    color: #777;
+}
+.footer .desc .develop ul li a{
+    text-decoration: none;
+    color: black;
+cursor: pointer;
+}
+.footer .desc .develop ul li a:active{
+    color: red;
+}
+.footer .click{
+margin-top: 20px;
+margin-left: 120px;
+}
+.footer .click a{
+text-decoration: none;
+border: 1px solid black;
+padding: 10px;
+color: black;
+cursor: pointer;
+}
+.footer .click a:hover{
+    background-color: red;
+    color: white;
+}
+/* end footer */
+@media (max-width:737px){
+    .cards{
+        margin-left: 25%;
+        /* margin-right: 70px; */
+        
+    }
+    .title h4{
+        text-align: center;
+        font-size:45px;
+        font-style: italic;
+    }
+    .footer {
+        width: 100%;
+    }
+    .footer .title{
+     
+      /* padding-right: 70px; */
+       font-size: 10px;
+       width: 100%;
+       margin-right: 50%;
+    }
+    .footer .desc{
+   /* justify-content: space-between; */
+   flex-wrap: wrap;
+    }
+    .footer .desc .develop{ 
+    /* position: relative;
+ padding-left: 30px; 
+   padding-right: 20px;
+  right: 80px; */
+ flex: 25%;
+    } 
+}
