@@ -1,0 +1,161 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+
+
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    margin: 0 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.landing .img img {
+    width: 100%;
+}
+
+.topics {
+    margin-top: 20px;
+}
+
+.topics h4,
+.topics p {
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.category {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.category img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.category h5 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer .title h2 {
+    text-align: center;
+}
+
+.footer .desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.develop {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+}
+
+.develop h3 {
+    text-align: center;
+}
+
+.develop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.develop li {
+    margin: 10px 0;
+}
+
+.click {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        margin-top: 10px;
+    }
+
+    .cards .category {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .develop {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cards .category {
+        flex-basis: calc(100% - 20px);
+    }
+}
